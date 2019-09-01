@@ -1,9 +1,13 @@
-header {
-    background-color: grey;
+#container {
+    background-color: whitesmoke;
+    border: 1px solid black;
+    margin: 20px;
+    padding: 10px;
 }
 
-body {
-    background-color: lightgoldenrodyellow;
+header {
+    background-color: lightblue;
+    text-align: center;
 }
 
 #empTable {
@@ -17,5 +21,13 @@ body {
 
 #tableBody {
     border: 1px solid black;
+}
+
+.red {
+    background-color: red;
+}
+
+#submitButton {
+    margin-top: 5px;
 }
 

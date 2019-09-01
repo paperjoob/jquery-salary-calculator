@@ -10,25 +10,30 @@
     <title>Jquery Salary Calculator</title>
 </head>
 <body>
-    <header>
-        <h1>Salary Calculator</h1>
-    </header>
-    <div id="topSection">
-    <h2>Add Employee</h2>
-    <input id="firstNameIn" placeholder="first name" type='text'/>
-    <input id="lastNameIn" placeholder="last name" type='text'/>
-    <input id="idIn" placeholder="ID" type='text'/>
-    <input id="titleIn" placeholder="job title" type='text'/>
-    <input id="annualSalaryIn" placeholder="annual salary" type='text'/>
-    <br>
-    <button id="submitButton">Submit</button>
+    <div id="container">
+        <header>
+            <h1>Salary Calculator</h1>
+        </header>
+        <div id="topSection">
+        <h2>Add Employee</h2>
+        <input id="firstNameIn" placeholder="first name" type='text'/>
+        <input id="lastNameIn" placeholder="last name" type='text'/>
+        <input id="idIn" placeholder="ID" type='text'/>
+        <input id="titleIn" placeholder="job title" type='text'/>
+        <input id="annualSalaryIn" placeholder="annual salary" type='text'/>
+        <br>
+        <button id="submitButton">Submit</button>
 
-    </div>
-    <h2>Employees</h2>
+        </div>
+        <h2>Employees</h2>
 
-    <div class='employeeTable'>
+        <div class='employeeTable'>
+            <table id="empTable">
+
+            </table>
+        </div>
+        <p id="totalMonthly"></p>Total Monthly: $ <span id=totalMonthlyOut>0</span></p>
     </div>
-    <p id="totalMonthly"></p>Total Montly: </p>
     
 </body>
 </html>
