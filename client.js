@@ -71,7 +71,7 @@ function handleSubmit() {
     appendDom();
 } // end handleSubmit
 
-function addMonthlyCosts(salary) {
+function addMonthlyCosts() {
     console.log('in addMonthlyCosts');
     let totalMonthlySpend = 0;
     for (employee of allEmployees) {
@@ -84,19 +84,15 @@ function addMonthlyCosts(salary) {
 
     if (totalMonthlySpend > 20000){
         $('#totalMonthlyOut').addClass('red');
+    } else {
+        $('#totalMonthlyOut').removeClass('red');
     } // end if more than 20,000
 }
 
 function deleteEmp() {
     console.log('in deleteEmp');
     $(this).parent().parent().remove();
-    let deleteItem = employee;
-    allEmployees.splice($.inArray(deleteItem, employee), 1); //access employee and remove 1 object in the array
-    removeSalary();
+    allEmployees.splice(employee, 1)//access employee and remove 1 object in the array
+    addMonthlyCosts();
+
 } // end deleteEmp
-
-function removeSalary() {
-    console.log('in removeSalary');
-
-
-}
