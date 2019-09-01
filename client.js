@@ -60,7 +60,7 @@ function handleSubmit() {
         id: idInVal,
         title: titleInVal,
         annualSalary: annualSalaryInVal
-    }
+    } // end newEmployee constructor
     allEmployees.push(newEmployee); // push new employees into allEmployees array
     $('#firstNameIn').val(''); // clears out input field after submission
     $('#lastNameIn').val('');
@@ -94,5 +94,4 @@ function deleteEmp() {
     $(this).parent().parent().remove();
     allEmployees.splice(employee, 1)//access employee and remove 1 object in the array
     addMonthlyCosts();
-
 } // end deleteEmp
