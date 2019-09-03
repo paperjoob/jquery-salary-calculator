@@ -65,7 +65,7 @@ function handleSubmit() {
     $('#firstNameIn').val(''); // clears out input field after submission
     $('#lastNameIn').val('');
     $('#idIn').val('');
-    $('#titleValIn').val('');
+    $('#titleIn').val('');
     $('#annualSalaryIn').val('');
     addMonthlyCosts();
     appendDom();
